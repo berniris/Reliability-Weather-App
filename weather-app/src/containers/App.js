@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   render() {
-    console.log({Route})
+    console.log(this.state.cities)
     return (
   <div className="App">
   <Route
