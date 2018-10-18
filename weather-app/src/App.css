@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Nord Light";
-    src: url("./fonts/Nord Light.otf") format("opentype");
+    font-family: "Nord Medium";
+    src: url("./fonts/Nord Medium.otf") format("opentype");
 }
 
 @font-face {
@@ -22,7 +22,7 @@ body {
 body {
 	background-color: #eeebe2;
 	min-height: 100%;
-	font-family: 'Nord Light';
+	font-family: 'Nord Medium';
 }
 
 .header {
@@ -37,16 +37,16 @@ justify-content: space-around;
 .title, .about {
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	font-size: 80px;
+	font-size: 70px;
 	color: #5b5776;
-	margin: 20px 0px 70px 30px;
+	margin: 40px 0px 70px 50px;
 	width: 50%;
 }
 
 .reliability {
 	font-family: 'Millennium-Round';
 	text-transform: none;
-	letter-spacing: 1px;
+	letter-spacing: 7px;
 	font-size: 60px;
 	display: block;
 }
@@ -55,6 +55,7 @@ justify-content: space-around;
 	font-size: 15px;
 	line-height: 30px;
 	margin-top: 130px;
+	margin-right: 10px;
 }
 
 .city-container {
@@ -96,5 +97,61 @@ justify-content: space-around;
 	height: 331px;
 }
 
+.view-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #5b5776;
+}
+
+.view-header {
+	text-align: center;
+	color: #ffffff;
+}
+
+.view-header, .view-body {
+	border-radius: 25px;
+	border: 2px solid #E7B297;
+	padding: 20px;
+	width: 400px;
+	height: 100px;
+	margin: 30px;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-size: 20px;
+}
+
+.view-body {
+	height: 400px;
+	width: 600px;
+	font-size: 30px;
+	letter-spacing: 1px;
+	font-family: 'Nord Medium';
+	background-color: #f7f6f2;
+}
+
+.view-container img {
+   width: 60px;
+   height: auto;
+}
+
+.description p {
+	font-size: 20px;
+}
+
+.detail {
+	display: inline-block;
+	margin: 20px 5px 5px 0px;
+	font-size: 20px;
+}
+
+.view-body-top {
+	display: flex;
+	flex-direction: row;
+}
+
+.view-body-top h1 {
+	font-size: 30px;
+}
 
 

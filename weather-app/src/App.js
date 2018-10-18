@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
+import View from './components/cities/View'
 
 class App extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class App extends Component {
     cities: [],
     error: false
   }
-
+this.getClickedCity = this.getClickedCity.bind(this);
 }
 
   fetchWeatherData() {
@@ -25,17 +26,32 @@ class App extends Component {
     }))
   }
 
+  getClickedCity(name) {
+    const index = this.state.cities.findIndex(city => city.name.toLowerCase().replace(' ', '-') === name);
+    return {
+      city: this.state.cities[index]
+    }
+  }
+
   componentDidMount() {
     this.fetchWeatherData();
   }
 
   render() {
-    console.log(this.state.cities)
     return (
   <div className="App">
   <Route
   exact path="/"
   render={() => (<Home cities={this.state.cities}/>)}
+  />
+  <Route 
+  path="/:id"
+  render={(props) => (
+    <View
+      city={this.getClickedCity(props.match.params.id)}
+      cities={this.state.cities}
+      />
+      )}
   />
       </div>
     );
