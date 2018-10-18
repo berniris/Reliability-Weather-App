@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
-import Home from '../components/Home';
+import Home from './components/Home';
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +14,8 @@ class App extends Component {
 }
 
   fetchWeatherData() {
-    fetch(`https://api.openweathermap.org/data/2.5/group?id=1609350,2643743,6455259,1880252,5128638&units=imperial&appid=7b6e08c93ea26e6904940a301201292a}`)
+    //remember to generate new api code and load in .env file before pushing to heroku 
+    fetch(`https://api.openweathermap.org/data/2.5/group?id=3170647,2759794,6455259,3128760,5128638&units=imperial&appid=7b6e08c93ea26e6904940a301201292a`)
     .then(resp => resp.json())
     .then(data => this.setState({
       cities: data.list
@@ -24,8 +25,12 @@ class App extends Component {
     }))
   }
 
+  componentDidMount() {
+    this.fetchWeatherData();
+  }
+
   render() {
-    console.log({Route})
+    console.log(this.state.cities)
     return (
   <div className="App">
   <Route

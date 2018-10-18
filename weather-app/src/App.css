@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Nord Light";
+    src: url("./fonts/Nord Light.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #eeebe2;
+	min-height: 100%;
+	border: dashed 7px #e9c2a3;
+}
+
+.city-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+h1 {
+	font-family: 'Nord Light';
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 80px;
+	color: #5b5776;
+	margin: 20px 0px 40px 30px;
+	width:50%;
+}
+
+
+.paris {
+	background: url('./images/paris.png');
+	width: 217px;
+	height: 331px;
+}
+
+.new-york {
+	background: url('./images/nyc.png');
+	width: 217px;
+	height: 331px;
+}
+
+.pisa {
+	background: url('./images/pisa.png');
+	width: 217px;
+	height: 331px;
+}
+
+.amsterdam {
+	background: url('./images/amsterdam.png');
+	width: 217px;
+	height: 331px;
+}
+
+.barcelona {
+	background: url('./images/barcelona.png');
+	width: 217px;
+	height: 331px;
+}
+
+
+
