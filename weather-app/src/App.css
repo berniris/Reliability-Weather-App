@@ -3,6 +3,11 @@
     src: url("./fonts/Nord Light.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "Millennium-Round";
+    src: url("./fonts/Millennium-Round.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +22,39 @@ body {
 body {
 	background-color: #eeebe2;
 	min-height: 100%;
-	border: dashed 7px #e9c2a3;
+	font-family: 'Nord Light';
+}
+
+.header {
+display: flex;
+justify-content: space-around;
+}
+
+.App {
+/*	border: dashed 7px #e9c2a3;*/
+}
+
+.title, .about {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 80px;
+	color: #5b5776;
+	margin: 20px 0px 70px 30px;
+	width: 50%;
+}
+
+.reliability {
+	font-family: 'Millennium-Round';
+	text-transform: none;
+	letter-spacing: 1px;
+	font-size: 60px;
+	display: block;
+}
+
+.about {
+	font-size: 15px;
+	line-height: 30px;
+	margin-top: 130px;
 }
 
 .city-container {
@@ -25,16 +62,7 @@ body {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: flex-end;
-}
-
-h1 {
-	font-family: 'Nord Light';
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 80px;
-	color: #5b5776;
-	margin: 20px 0px 40px 30px;
-	width:50%;
+	width: 100%;
 }
 
 

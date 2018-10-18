@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function City(props) {
@@ -6,9 +7,9 @@ function City(props) {
   const cityName = props.name.toLowerCase().replace(' ', '-');
 
   return (
-    <div className={`${cityName}`}>
-    {/*<p>{cityName}</p>*/}
-    </div>
+    <Link to={`/${cityName}`}>
+    <div className={`${cityName}`}></div>
+    </Link>
     )
 }
 

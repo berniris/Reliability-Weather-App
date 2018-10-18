@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from './Header'
 import Cities from './cities/Cities';
 
 
 function Home(props) {
 	return (
 		<div>
-		<h1>Reliability Weather App</h1>
+		<Header/>
 		<Cities cities={props.cities}/>
 		</div>
 		)
