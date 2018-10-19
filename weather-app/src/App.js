@@ -15,7 +15,7 @@ this.getClickedCity = this.getClickedCity.bind(this);
 }
 
   fetchWeatherData() {
-    //remember to generate new api code and load in .env file before pushing to heroku 
+    //generate new api code and load in .env file before pushing to heroku 
     fetch(`https://api.openweathermap.org/data/2.5/group?id=3170647,2759794,6455259,3128760,5128638&units=imperial&appid=7b6e08c93ea26e6904940a301201292a`)
     .then(resp => resp.json())
     .then(data => this.setState({
