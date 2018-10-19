@@ -73,10 +73,18 @@ justify-content: space-around;
 	height: 331px;
 }
 
+.paris-img {
+	background: url('https://images.unsplash.com/photo-1527706799914-6a6de57961dd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=adab805a6c9025b037050b815eb44d42&auto=format&fit=crop&w=634&q=80');
+}
+
 .new-york {
 	background: url('./images/nyc.png');
 	width: 217px;
 	height: 331px;
+}
+
+.new-york-img {
+	background: url('https://images.unsplash.com/photo-1504913659239-6abc87875a63?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=afb301973034b63cb3ca991187921956&auto=format&fit=crop&w=400&q=60');
 }
 
 .pisa {
@@ -85,16 +93,28 @@ justify-content: space-around;
 	height: 331px;
 }
 
+.pisa-img {
+	background: url('https://images.unsplash.com/photo-1538627432729-0157e201234f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ee865ec0c2d05a685b7507a73790eda3&auto=format&fit=crop&w=400&q=60');
+}
+
 .amsterdam {
 	background: url('./images/amsterdam.png');
 	width: 217px;
 	height: 331px;
 }
 
+.amsterdam-img {
+	background: url('https://images.unsplash.com/photo-1505068036808-b69768dd8623?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bfb24b9b0490d95bad7f490dd8ccdd71&auto=format&fit=crop&w=634&q=80');
+}
+
 .barcelona {
 	background: url('./images/barcelona.png');
 	width: 217px;
 	height: 331px;
+}
+
+.barcelona-img {
+	background: url('https://images.unsplash.com/photo-1532704553978-0f1446208202?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=36e806724176e1b72fceb2b5795c7982&auto=format&fit=crop&w=1050&q=80');
 }
 
 .view-container {
@@ -104,6 +124,42 @@ justify-content: space-around;
 	color: #5b5776;
 }
 
+.city-img, .circle-shape {
+	border-radius: 50%;
+	width: 190px;
+	height: 180px;
+	z-index: 3;
+	margin-top: -450px;
+	margin-left: 550px;
+	background-size: cover;
+	background-position: center;
+}
+
+.skinny-rect-shape {
+	width: 7px;
+	height: 140px;
+	background-color: #E7B297;
+	z-index: 5;
+	margin-left: 560px;
+}
+
+.circle-shape {
+	background-color: #ffffff;
+	margin-top: 0px;
+	border: 3px solid #E7B297;
+}
+
+.view-background {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #5b5776;
+    z-index: -1;
+    border-top: 10px solid #ffffff;
+}
+
 .view-header {
 	text-align: center;
 	color: #ffffff;
@@ -111,7 +167,7 @@ justify-content: space-around;
 
 .view-header, .view-body {
 	border-radius: 25px;
-	border: 2px solid #E7B297;
+	border: 3px solid #E7B297;
 	padding: 20px;
 	width: 400px;
 	height: 100px;
@@ -119,18 +175,20 @@ justify-content: space-around;
 	text-transform: uppercase;
 	letter-spacing: 8px;
 	font-size: 20px;
+	z-index: 1;
 }
 
 .view-body {
-	height: 400px;
-	width: 600px;
+	height: 300px;
+	width: 500px;
 	font-size: 30px;
 	letter-spacing: 1px;
 	font-family: 'Nord Medium';
 	background-color: #f7f6f2;
+	margin-top: -20px;
 }
 
-.view-container img {
+.description img {
    width: 60px;
    height: auto;
 }
@@ -153,5 +211,36 @@ justify-content: space-around;
 .view-body-top h1 {
 	font-size: 30px;
 }
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 100px;
+  height: 32px;
+  opacity: 0.5;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: '';
+  height: 50px;
+  width: 15px;
+  background-color: #5b5776;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}
+
 
 
