@@ -2,7 +2,6 @@
   "name": "reliable-weather",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://berniris.com/reliable-weather/index.html",
   "dependencies": {
     "dotenv": "^6.1.0",
     "react": "^16.5.2",
