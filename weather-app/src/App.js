@@ -35,6 +35,7 @@ this.getClickedCity = this.getClickedCity.bind(this);
 
   componentDidMount() {
     this.fetchWeatherData();
+    document.title = 'Reliability Weather'
   }
 
   render() {
