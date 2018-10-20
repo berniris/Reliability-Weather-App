@@ -310,3 +310,10 @@ justify-content: space-around;
 	}
 }
 
+@media screen and (min-height: 200px) {
+	.view-background {
+	 display: none;
+	}
+
+}
+
