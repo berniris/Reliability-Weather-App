@@ -28,7 +28,6 @@ function CityView(props) {
         <div className="skinny-rect-shape"></div>
         <div className="circle-shape"><Link to="/">Back Home</Link></div>
         <div className="view-background"></div>
-        <Link to="/"><div className="close"></div></Link>
 		</div>
 		)
 }
