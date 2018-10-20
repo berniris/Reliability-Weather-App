@@ -295,7 +295,7 @@ justify-content: space-around;
 	}
 
 	.close {
-		margin-left: 30px;
+		position: absolute;
 	}
 }
 
