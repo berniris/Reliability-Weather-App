@@ -44,7 +44,7 @@ justify-content: space-around;
 	width: 50%;
 }
 
-.reliability {
+.reliable {
 	font-family: 'Millennium-Round';
 	text-transform: none;
 	letter-spacing: 7px;
@@ -155,7 +155,7 @@ justify-content: space-around;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30%;
+    height: 200px;
     background-color: #5b5776;
     z-index: -1;
     border-top: 10px solid #ffffff;
@@ -248,5 +248,56 @@ justify-content: space-around;
   transform: rotate(-45deg);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+.city-container  {
+	flex-wrap: wrap;
+}
+}
 
+@media screen and (max-width: 600px) {
+	.reliable {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	.title {
+		font-size: 50px;
+	}
+
+	.header {
+		flex-direction: column;
+	}
+
+	.about {
+		margin-top: -30px;
+		width: 70%;
+	}
+
+	.city-container {
+		flex-wrap: wrap;
+	}
+
+}
+
+@media screen and (min-width: 1080px) {
+	.header {
+		margin-bottom: 100px;
+	}
+
+	.about {
+		font-size: 23px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.header {
+		margin-bottom: 80px;
+		margin-top: 100px;
+	}
+
+	.about {
+		font-size: 30px;
+	}
+}
 
